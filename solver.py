@@ -79,4 +79,8 @@ def wordle():
         words = Value(guess, feedback, words)
     return guesses
 
+total_guesses = 0
+for i in range(100):                
+    total_guesses += wordle()
 
+print(f"Average guesses: {total_guesses/100}")
